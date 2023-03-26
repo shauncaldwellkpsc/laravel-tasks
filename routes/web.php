@@ -58,3 +58,5 @@ Route::delete('/task/{id}', function ($id) {
 
     return redirect('/');
 });
+
+Route::view('/my-page', 'my-page');
