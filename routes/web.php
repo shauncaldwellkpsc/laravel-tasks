@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::view('/my-page', 'my-page');
+
 use App\Models\Task;
 use Illuminate\Http\Request;
 
@@ -59,4 +61,4 @@ Route::delete('/task/{id}', function ($id) {
     return redirect('/');
 });
 
-Route::view('/my-page', 'my-page');
+
